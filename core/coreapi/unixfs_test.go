@@ -24,6 +24,7 @@ import (
 	config "gx/ipfs/QmRwCaRYotCqXsVZAXwWhEJ8A74iAaKnY7MUe6sDgFjrE5/go-ipfs-config"
 	mocknet "gx/ipfs/QmUDzeFgYrRmHL2hUB6NZmqcBVQtUzETwmFRUc9onfSSHr/go-libp2p/p2p/net/mock"
 	cbor "gx/ipfs/QmVhWKoxHMJNbTMEPhqLAjKg1Y65j9tvWNecYWAHwyguAZ/go-ipld-cbor"
+	pstore "gx/ipfs/QmYLXCWN2myozZpx8Wx4UjrRuQuhY3YtWoMi6SHaXii6aM/go-libp2p-peerstore"
 	peer "gx/ipfs/QmcZSzKEM5yDfpZbeEEZaVmaZ1zXm6JWTbrQZSB8hCVPzk/go-libp2p-peer"
 )
 
