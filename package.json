@@ -587,6 +587,12 @@
       "hash": "QmfMirfpEKQFctVpBYTvETxxLoU5q4ZJWsAMrtwSSE2bkn",
       "name": "go-verifcid",
       "version": "0.0.3"
+    },
+    {
+      "author": "magik6k",
+      "hash": "QmXEjYkYTXPNbzggMtueBgHKgz7Py94tvW8evhXUpJR3tz",
+      "name": "go-junit-report",
+      "version": "1.0.0"
     }
   ],
   "gxVersion": "0.10.0",

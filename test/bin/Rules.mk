@@ -26,7 +26,7 @@ $(d)/ma-pipe-unidir: test/dependencies/ma-pipe-unidir
 	$(go-build)
 TGTS_$(d) += $(d)/ma-pipe-unidir
 
-TGTS_GX_$(d) := hang-fds iptb
+TGTS_GX_$(d) := hang-fds iptb go-junit-report
 TGTS_GX_$(d) := $(addprefix $(d)/,$(TGTS_GX_$(d)))
 
 $(TGTS_GX_$(d)):

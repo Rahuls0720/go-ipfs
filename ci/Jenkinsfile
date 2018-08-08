@@ -81,7 +81,7 @@ def sharness_step = { run, osname, makeargs, ignore ->
     run "make gx-deps"
 
     try {
-      run "make -j12 ${makeargs} test/sharness/test-results/sharness.xml CONTINUE_ON_S_FAILURE=1 TEST_NO_FUSE=1 TEST_NO_DOCKER=1"
+      run "make -j12 ${makeargs} coverage/sharness_tests.coverprofile test/sharness/test-results/sharness.xml CONTINUE_ON_S_FAILURE=1 TEST_NO_FUSE=1 TEST_NO_DOCKER=1 TEST_GENERATE_JUNIT=1"
 
       try {
         // archive trash directories if any
