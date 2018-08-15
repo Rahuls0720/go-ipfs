@@ -5,7 +5,6 @@ import (
 
 	pin "github.com/ipfs/go-ipfs/pin"
 
-	"github.com/ipfs/go-ipfs/thirdparty/streaming-cid-set"
 	merkledag "gx/ipfs/QmQzSpSjkdGHW6WFBhUG6P3t9K8yv7iucucT1cQaqJ6tgd/go-merkledag"
 	blocks "gx/ipfs/QmYBEfMSquSGnuxBthUoBJNs3F6p4VAPPvAgxq6XXGvTPh/go-ipfs-blockstore"
 	cid "gx/ipfs/QmYjnkEL7i731PirfVH1sis89evN7jt4otSHw5D2xXXwUV/go-cid"
@@ -44,8 +43,8 @@ func NewPinnedProvider(pinning pin.Pinner, dag ipld.DAGService, onlyRoots bool) 
 	}
 }
 
-func pinSet(ctx context.Context, pinning pin.Pinner, dag ipld.DAGService, onlyRoots bool) (*streamingset.StreamingSet, error) {
-	set := streamingset.NewStreamingSet()
+func pinSet(ctx context.Context, pinning pin.Pinner, dag ipld.DAGService, onlyRoots bool) (*cid.StreamingSet, error) {
+	set := cid.NewStreamingSet()
 
 	go func() {
 		ctx, cancel := context.WithCancel(ctx)
